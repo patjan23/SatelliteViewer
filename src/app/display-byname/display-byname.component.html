@@ -1,0 +1,40 @@
+
+ 
+ <div *ngIf="satName == 'Class of Orbit'" >
+<br>   
+<form class="w3-container w3-card-4">
+    <h2> Orbit type</h2>
+ <div *ngFor = " let Orbit of Orbits" >   
+    <p>
+    <input class="w3-radio" type="radio" name="gender" value="male" checked (change)="handleChange(Orbit)">
+    <label>{{Orbit}}</label></p>
+  </div> 
+  </form>  
+
+ </div>
+
+  <div *ngIf="satName == 'Name of Satellite' || 'Class of Orbit' ">   
+    <br>
+             <nav class="navbar navbar-default">
+                <div class="container-fluid">                
+                  <ul class="nav navbar-nav">
+                    <li *ngFor="let alphabet of alphabets">
+                         <a href="#"  (click)="letterClick(alphabet)" > {{alphabet}} </a>
+                    </li>                  
+                  </ul>
+                </div>
+              </nav> 
+            
+
+            
+          
+            <div class="btn-group">
+                <button type="button" class="w3-btn w3-green w3-ripple"
+                 *ngFor="let sat of filterSat" (click)="NameClick(sat)"  style ="margin:5px;" >
+                    {{ sat.Name}}  
+                </button>               
+              </div>   
+            </div>           
+                
+
+

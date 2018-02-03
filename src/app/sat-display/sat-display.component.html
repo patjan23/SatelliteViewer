@@ -1,0 +1,10 @@
+<div *ngFor = " let displayParameter of displayParameters" >    
+    <!-- <li><a href="#">{{displayParameter}}</a></li>     -->
+    <!-- <input type="radio"  name="displayParameter"  (change) ="handleChange(event)")>  -->
+    <a class="w3-bar-item w3-button" href="#">
+    <h5><input class="w3-radio" type="radio" name="radiogroup" (change)="handleChange(displayParameter)" [checked]="(idx === 0)" >{{displayParameter}} </h5>
+</a>
+</div>
+
+
+

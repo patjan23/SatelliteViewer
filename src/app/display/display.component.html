@@ -1,0 +1,30 @@
+<div *ngIf="displayItem == 'Name of Satellite'">      
+   <app-display-byname  [satName] = 'displayItem'  > </app-display-byname>
+</div>
+<div *ngIf="displayItem == 'Country of Operator/Owner'">       
+   <app-display-operator-owner [Operator] = 'displayItem' ></app-display-operator-owner> 
+</div>
+<div *ngIf="displayItem == 'Operator/Owner'">       
+    <app-display-operator-owner [Operator] = 'displayItem' ></app-display-operator-owner> 
+ </div>
+
+ <div *ngIf="displayItem == 'Purpose'">       
+    <app-display-operator-owner [Operator] = 'displayItem' ></app-display-operator-owner> 
+ </div>
+
+ <div *ngIf="displayItem == 'Class of Orbit'">    
+        <app-display-byname  [satName] = 'displayItem'  > </app-display-byname>
+</div>
+
+
+
+
+<div *ngIf="displayItem == 'Launch Site'">       
+        <app-display-operator-owner [Operator] = 'displayItem' ></app-display-operator-owner> 
+</div>
+<div *ngIf="displayItem == 'Launch Vehicle'">       
+        <app-display-operator-owner [Operator] = 'displayItem' ></app-display-operator-owner> 
+</div>
+<div *ngIf="displayItem == 'COSPAR Number'">       
+        <app-display-operator-owner [Operator] = 'displayItem' ></app-display-operator-owner> 
+</div>

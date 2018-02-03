@@ -1,0 +1,27 @@
+<div style="overflow-y: scroll; height:1000px;">   
+ 
+<br><br>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">    
+        <div style="overflow-y: scroll; height:200px;">            
+      <ul class="nav navbar-nav">
+         
+        <li *ngFor="let name of listName ">
+             <a href="#"  (click)="letterClick(name)" > {{name}} </a>
+        </li>      
+                
+      </ul>
+    </div>   
+    </div>
+  </nav> 
+
+  
+  <div class="btn-group">
+      <button type="button" class="w3-btn w3-green w3-ripple"
+       *ngFor="let sat of satList" (click)="NameClick(sat)"  style ="margin:5px;" >
+          {{ sat.Name}}  
+      </button>               
+    </div> 
+  </div> 
+ 
+   
